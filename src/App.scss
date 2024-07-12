@@ -1,0 +1,34 @@
+@import './Styles/constant';
+
+#root {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app_container {
+  background-color: $primary;
+  width: 100%;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: Agrandir;
+  src: url('../fonts/Agrandir-Regular.otf');
+}
+
+@font-face {
+  font-family: AgrandirBold;
+  src: url('../fonts/Agrandir-TextBold.otf');
+}
+
+@font-face {
+  font-family: Bricolage Grotesque;
+  src: url('../public/fonts/BricolageGrotesque.ttf');
+}
+
+@font-face {
+  font-family: Brema;
+  src: url('../public/fonts/Brema.ttf');
+}

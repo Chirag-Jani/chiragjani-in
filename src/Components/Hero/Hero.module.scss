@@ -1,0 +1,62 @@
+@import '../../Styles/constant';
+
+.hero_container {
+  @include occupyFullSpace;
+  @include flex(column, center, center);
+  position: relative;
+  background-color: $alternate;
+  color: $primary;
+  font-weight: 800;
+
+  .brutalist_icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    svg {
+      max-width: 52px;
+      max-height: 52px;
+    }
+  }
+
+  h1 {
+    font-size: 156px;
+    font-family: Brema;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-family: Bricolage Grotesque;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .socials {
+    @include flex(column, center, center);
+    gap: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+
+    .social_icon {
+
+      svg {
+        max-width: 32px;
+        max-height: 32px;
+        cursor: pointer;
+
+      }
+
+      &:hover {
+        path {
+          fill: $primary;
+        }
+      }
+    }
+  }
+}

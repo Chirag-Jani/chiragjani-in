@@ -1,0 +1,7 @@
+@import '../../Styles/constant';
+
+.home_container {
+  @include occupyFullSpace;
+  @include flex(column, flex-start, center);
+  // background-color: $secondary;
+}
