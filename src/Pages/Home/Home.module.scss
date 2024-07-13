@@ -4,4 +4,14 @@
   @include occupyFullSpace;
   @include flex(column, flex-start, center);
   // background-color: $secondary;
+
+  ::-moz-selection {
+    background-color: $secondary;
+    color: $primary;
+  }
+  
+  ::selection {
+    background-color: $secondary;
+    color: $primary;
+  }
 }

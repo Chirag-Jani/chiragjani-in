@@ -1,0 +1,76 @@
+@import '../../Styles/constant';
+
+.testimonial_container {
+  width: 100%;
+  background: $alternate;
+  @include flex(row, center, center);
+  position: relative;
+  padding: 150px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  max-height: 100vh;
+
+  .left,
+  .right {
+    @include flex(row, center, center);
+    width: 50px;
+    min-width: 50px;
+    cursor: pointer;
+    svg {
+      max-width: 32px;
+      max-height: 32px;
+    }
+  }
+
+  .content {
+    @include flex(row, center, center);
+    width: 100%;
+    overflow: hidden;
+
+    .image {
+      width: 50%;
+      padding: 150px;
+      box-sizing: border-box;
+      object-fit: contain;
+      
+      img {
+        background: $primary;
+        border-radius: 75px;
+        width: 100%;
+        max-width: 350px;
+        max-height: 450px;
+        object-fit: contain;
+      }
+    }
+
+    .text {
+      @include flex(column, center, flex-start);
+
+      width: 50%;
+      padding: 25px;
+      box-sizing: border-box;
+
+      .name{
+        text-align: left;
+        color: $secondary;
+        font-size: 52px;
+        line-height: 100%;
+        width: 100%;
+        font-family: Bricolage Grotesque;
+        p{
+          margin: 25px 0;
+        }
+      }
+      
+      .desc{
+        text-align: left;
+        color: $primary;
+        font-size: 22px;
+        line-height: 125%;
+        width: 100%;
+        font-family: Agrandir;
+
+      }
+    }
+  }
+}
