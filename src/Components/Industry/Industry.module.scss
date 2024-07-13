@@ -1,0 +1,140 @@
+@import '../../Styles/constant';
+
+// industry.module.scss
+.industrySection {
+  padding: 200px 50px;
+  box-sizing: border-box;
+  // min-height: 100vh;
+  border: 1px solid blue;
+  width: 100%;
+  background: $alternate;
+
+  .industryItems {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .industryCard {
+    font-family: Bricolage Grotesque;
+    text-align: left;
+    position: relative;
+    background-color: #141414;
+    padding: 40px;
+    height: 450px;
+
+    &::after {
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "";
+      background-color: $secondary;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform-origin: 50% 100%;
+      transform: scaleY(0);
+      transition: transform 0.3s;
+      z-index: 0;
+    }
+
+    &:hover {
+      &::after {
+        transform: scaleY(1);
+      }
+
+      .industryImg svg path {
+        stroke: black;
+        transition: all 0.3s;
+        fill: $alternate;
+      }
+    }
+
+    .industryImg {
+      margin-bottom: 50px;
+      position: relative;
+      z-index: 1;
+
+      svg{
+        max-width: 64px;
+        max-height: 64px;
+      }
+
+      svg path {
+        transition: all 0.3s;
+      }
+    }
+
+    .industryContent {
+      position: absolute;
+      width: 80%;
+      bottom: 40px;
+      height: 270px;
+
+      h1,
+      h4,
+      p {
+        position: relative;
+        z-index: 1;
+      }
+
+      h1 {
+        font-family: Bricolage Grotesque;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #ffffff;
+        padding: 0;
+      }
+
+      h4 {
+        font-family: Agrandir;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;
+        color: #ffffff;
+        padding: 0;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-family: Agrandir;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        padding: 0;
+        opacity: 0.7;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .industryCardMain {
+    padding: 50px;
+    box-sizing: border-box;
+
+    h1 {
+      font-family: Bricolage Grotesque;
+      text-align: left;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 70px;
+      line-height: 80px;
+      color: #ffffff;
+      padding: 0;
+      margin: 0;
+
+      img {
+        width: 50px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

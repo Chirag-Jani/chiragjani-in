@@ -6,7 +6,9 @@
   position: relative;
   background-color: $alternate;
   color: $primary;
+  min-height: 100vh;
   font-weight: 800;
+  border: 1px solid red;
 
   .brutalist_icon {
     width: 100%;
