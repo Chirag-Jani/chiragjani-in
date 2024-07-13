@@ -1,6 +1,30 @@
-body{
+@import './Styles/constant';
+
+
+body {
   margin: 0;
   padding: 0;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: calc(100% - 200px);
+    margin: 100px; 
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $primary;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $secondary;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #2828ff;
+  }
 }
 
 :root {
@@ -13,4 +37,3 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-

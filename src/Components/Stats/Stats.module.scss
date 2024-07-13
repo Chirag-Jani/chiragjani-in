@@ -1,0 +1,134 @@
+@import '../../Styles/constant';
+
+
+.statsSection {
+  background-color: $secondary;
+  width: 100%;
+  padding: 150px 0;
+  display: flex;
+  box-sizing: border-box;
+
+  .statsWrapper {
+    display: flex;
+    width: 100%;
+    justify-self: stretch;
+
+    h3 {
+      font-family: Bricolage Grotesque;
+      font-style: normal;
+      font-weight: bold;
+      text-align: left;
+      font-size: 55px;
+      line-height: 140%;
+      color: #ffffff;
+      margin: 0;
+      margin-bottom: 15px;
+      padding: 0;
+
+      svg {
+        padding-left: 10px;
+        max-width: 80px;
+        max-height: 80px;
+        path{
+          fill: $alternate;
+        }
+      }
+    }
+
+    p {
+      font-family: Agrandir;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      text-align: left;
+      line-height: 100%;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      max-width: 75%;
+    }
+
+    h5 {
+      font-family: "uniqual-md-bold";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 141%;
+      color: #ffffff;
+      margin: 0;
+      padding: 74px 0 0;
+    }
+
+    span {
+      font-family: "uniqual-md-bold";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 141%;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      border-bottom: 2px solid #fff;
+      z-index: 1;
+      position: relative;
+    }
+  }
+
+  .statsText {
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 75px;
+  }
+
+  .statsEmployee {
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 75px;
+
+    p {
+      font-family: Agrandir;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 100%;
+      color: #ffffff;
+      margin: 0;
+      text-align: center;
+      border: none;
+      outline: none;
+      width: 100%;
+      
+      span{
+        background-color: $alternate;
+        font-family: Agrandir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        padding: 1px 5px;
+      }
+    }
+
+    h1 {
+      font-family: Bricolage Grotesque;
+      text-align: center;
+      font-style: normal;
+      width: 100%;
+      font-weight: bold;
+      font-size: 170px;
+      line-height: 100%;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

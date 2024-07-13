@@ -6,6 +6,18 @@ export const Brut1 = () => {
   )
 }
 
+export const Brut2 = () => {
+  return (
+    <svg width="346" height="348" viewBox="0 0 346 348" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.400391 0.700195L173 173.3H0.400391V0.700195Z" fill="#6464FF" />
+      <path d="M173 0.700195L345.6 173.3H173V0.700195Z" fill="#6464FF" />
+      <path d="M0.400391 174.7L173 347.3H0.400391V174.7Z" fill="#6464FF" />
+      <path d="M173 174.7L345.6 347.3H173V174.7Z" fill="#6464FF" />
+    </svg>
+
+  )
+}
+
 export const Call = () => {
   return (
     <svg width="42" height="51" viewBox="0 0 42 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +50,7 @@ export const Instagram = () => {
 export const Twitter = () => {
   return (
     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <mask id="mask0_245_10" style={{"maskType":"luminance"}} maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <mask id="mask0_245_10" style={{ "maskType": "luminance" }} maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
         <path d="M0 0H64V64H0V0Z" fill="white" />
       </mask>
       <g mask="url(#mask0_245_10)">
