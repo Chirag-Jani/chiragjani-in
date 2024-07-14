@@ -62,7 +62,7 @@ const Industry = () => {
   ];
 
   return (
-    <section className={styles.industrySection}>
+    <div className={styles.industrySection}>
       <div className={styles.container}>
         <div className={styles.row}>
           <div className={styles.industryItems}>
@@ -97,7 +97,7 @@ const Industry = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

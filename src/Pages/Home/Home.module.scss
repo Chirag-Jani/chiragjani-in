@@ -3,13 +3,22 @@
 .home_container {
   @include occupyFullSpace;
   @include flex(column, flex-start, center);
+
+  @media screen and (max-width:500px) {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: none;
+  }
+
   // background-color: $secondary;
 
   ::-moz-selection {
     background-color: $primary;
     color: $alternate;
   }
-  
+
   ::selection {
     background-color: $primary;
     color: $alternate;

@@ -12,11 +12,11 @@ const Hero = () => {
       </div>
 
       <div className={styles.socials}>
-        <div className={styles.social_icon}><Twitter /></div>
-        <div className={styles.social_icon}><Instagram /></div>
-        <div className={styles.social_icon}><LinkedIn /></div>
-        <div className={styles.social_icon}><Call /></div>
-        <div className={styles.social_icon}><Mail /></div>
+        <div className={styles.social_icon}> <a target='_blank' href="https://x.com/chiragjani001"> <Twitter /> </a> </div>
+        {/* <div className={styles.social_icon}><Instagram /></div> */}
+        <div className={styles.social_icon}><a target='_blank' href="https://www.linkedin.com/in/chirag-jani/"><LinkedIn /></a></div>
+        <div className={styles.social_icon}><a href="tel:+918980149260"><Call /></a></div>
+        <div className={styles.social_icon}><a href="mailto:chiragjani5901@gmail.com "><Mail /></a></div>
       </div>
 
     </div>

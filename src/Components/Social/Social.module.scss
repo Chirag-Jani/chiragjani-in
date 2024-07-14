@@ -7,6 +7,13 @@
   @include flex(row, center, center);
   padding: 150px;
 
+  @media screen and (max-width:500px) {
+    @include flex(column, center, center);
+    padding: 50px 15px;
+    gap: 25px;
+
+  }
+
   .part1,
   .part2,
   .part3 {
@@ -17,13 +24,17 @@
     align-items: flex-start;
     justify-content: flex-start;
 
+    @media screen and (max-width:500px) {
+      width: 100%;
+    }
+
     .heading {
       font-size: 42px;
       font-family: Bricolage Grotesque;
       color: $primary;
       text-align: left;
 
-      svg{
+      svg {
         max-width: 32px;
         max-height: 32px;
       }
@@ -34,6 +45,10 @@
       font-family: Bricolage Grotesque;
       color: $primary;
       margin-bottom: 32px;
+
+      @media screen and (max-width:500px) {
+        font-size: 24px;
+      }
     }
 
     .options {
@@ -42,10 +57,15 @@
       font-family: Agrandir;
       color: $primary;
 
-      a{
+      @media screen and (max-width:500px) {
+        font-size: 18px;
+      }
+
+      a {
         text-decoration: none;
         color: $primary;
-        &:hover{
+
+        &:hover {
           text-decoration: underline;
           color: $secondary;
         }

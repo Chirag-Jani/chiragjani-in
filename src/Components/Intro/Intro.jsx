@@ -11,7 +11,7 @@ const Intro = () => {
   };
 
   return (
-    <section className={styles.introSection}>
+    <div className={styles.introSection}>
       <div className={styles.introWrapper}>
         <div className={styles.container}>
           <div className={styles.row}>
@@ -66,7 +66,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
