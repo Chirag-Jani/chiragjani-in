@@ -1,3 +1,4 @@
+import Contact from '../../Components/Contact/Contact'
 import Hero from '../../Components/Hero/Hero'
 import Industry from '../../Components/Industry/Industry'
 import Intro from '../../Components/Intro/Intro'
@@ -13,6 +14,7 @@ const Home = () => {
       <Industry />
       <Stats />
       <Testimonial />
+      <Contact />
     </div>
   )
 }

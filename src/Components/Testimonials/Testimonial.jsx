@@ -1,6 +1,6 @@
 import { LeftArrow, RightArrow } from '../../assets/Vectors/global';
 import styles from './Testimonial.module.scss';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const data = [
   {
@@ -37,14 +37,6 @@ const data = [
 
 const Testimonial = () => {
   const [selected, setSelected] = useState(0);
-
-  useEffect(() => {
-    if (selected < 0) {
-      setSelected(data.length - 1);
-    } else if (selected >= data.length) {
-      setSelected(0);
-    }
-  }, [selected]);
 
   const handlePrevious = () => {
     setSelected((prev) => (prev - 1 + data.length) % data.length);
