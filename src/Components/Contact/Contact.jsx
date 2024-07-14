@@ -19,7 +19,7 @@ const Contact = () => {
             <input type="email" placeholder='COMPANY NAME' />
           </div>
           <div className={styles.description}>
-            <input type="email" placeholder='DESRIBE YOUR NEED' required />
+            <input type="email" placeholder='DESCRIBE YOUR NEED' required />
           </div>
           <div className={styles.submit}>
             <button>SUBMIT</button>

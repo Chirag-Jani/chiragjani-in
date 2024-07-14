@@ -68,7 +68,7 @@
 
       @media screen and (max-width:500px) {
         font-size: 24px;
-
+        width: 75%;
       }
 
       &:after {
@@ -123,8 +123,8 @@
 
 @keyframes animate {
   0% {
-    top: 0%;
-    left: 0%;
+    top: 15%;
+    left: 15%;
     transform: rotate(0deg);
   }
 
@@ -136,7 +136,7 @@
 
   50% {
     top: 0%;
-    left: 100%;
+    left: 85%;
     transform: rotate(720deg);
   }
 
@@ -147,8 +147,8 @@
   }
 
   100% {
-    top: 0%;
-    left: 0%;
+    top: 15%;
+    left: 15%;
     transform: rotate(0deg);
   }
 
