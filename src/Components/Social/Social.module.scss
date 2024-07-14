@@ -1,0 +1,57 @@
+@import '../../Styles/constant';
+
+.social_container {
+  width: 100%;
+  box-sizing: border-box;
+  background: $alternate;
+  @include flex(row, center, center);
+  padding: 150px;
+
+  .part1,
+  .part2,
+  .part3 {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .heading {
+      font-size: 42px;
+      font-family: Bricolage Grotesque;
+      color: $primary;
+      text-align: left;
+
+      svg{
+        max-width: 32px;
+        max-height: 32px;
+      }
+    }
+
+    .title {
+      font-size: 32px;
+      font-family: Bricolage Grotesque;
+      color: $primary;
+      margin-bottom: 32px;
+    }
+
+    .options {
+      @include flex(column, flex-start, flex-start);
+      font-size: 24px;
+      font-family: Agrandir;
+      color: $primary;
+
+      a{
+        text-decoration: none;
+        color: $primary;
+        &:hover{
+          text-decoration: underline;
+          color: $secondary;
+        }
+      }
+    }
+
+
+  }
+}

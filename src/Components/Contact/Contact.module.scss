@@ -5,7 +5,6 @@
   background: $alternate;
   @include flex(row, center, center);
   color: $primary;
-  border: 1px solid red;
 
   .left,
   .right {

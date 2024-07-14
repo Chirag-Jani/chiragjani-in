@@ -2,6 +2,7 @@ import Contact from '../../Components/Contact/Contact'
 import Hero from '../../Components/Hero/Hero'
 import Industry from '../../Components/Industry/Industry'
 import Intro from '../../Components/Intro/Intro'
+import Social from '../../Components/Social/Social'
 import Stats from '../../Components/Stats/Stats'
 import Testimonial from '../../Components/Testimonials/Testimonial'
 import styles from './Home.module.scss'
@@ -15,6 +16,7 @@ const Home = () => {
       <Stats />
       <Testimonial />
       <Contact />
+      <Social />
     </div>
   )
 }

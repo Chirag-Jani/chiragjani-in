@@ -12,9 +12,14 @@
   .brutalist_icon {
     width: 100%;
     display: flex;
-    justify-content: center;
+    position: relative;
+    height: 100px;
 
     svg {
+      top: 0;
+      left: 0;
+      animation: animate 5s infinite ease-in-out;
+      position: absolute;
       max-width: 52px;
       max-height: 52px;
     }
@@ -33,6 +38,21 @@
     font-family: Bricolage Grotesque;
     margin: 0;
     padding: 0;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 0px;
+      background-color: $secondary;
+    }
+
+    &:hover:after {
+      animation: ulanimation 0.5s linear;
+    }
 
   }
 
@@ -45,7 +65,6 @@
     right: 25px;
 
     .social_icon {
-
       svg {
         max-width: 32px;
         max-height: 32px;
@@ -59,5 +78,65 @@
         }
       }
     }
+  }
+}
+
+@keyframes animate {
+  0% {
+    top: 0%;
+    left: 0%;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    top: 0%;
+    left: 50%;
+    transform: rotate(360deg);
+  }
+
+  50% {
+    top: 0%;
+    left: 100%;
+    transform: rotate(720deg);
+  }
+
+  75% {
+    top: 0%;
+    left: 50%;
+    transform: rotate(360deg);
+  }
+
+  100% {
+    top: 0%;
+    left: 0%;
+    transform: rotate(0deg);
+  }
+
+}
+
+@keyframes ulanimation {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  25% {
+    left: 0%;
+    width: 50%;
+  }
+
+  50% {
+    left: 0%;
+    width: 100%;
+
+  }
+
+  75% {
+    left: 50%;
+    width: 50%;
+  }
+
+  95% {
+    left: 100%;
+    width: 0;
   }
 }
