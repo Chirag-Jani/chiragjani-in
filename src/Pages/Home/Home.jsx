@@ -1,4 +1,5 @@
 import Contact from '../../Components/Contact/Contact'
+import Department from '../../Components/Departments/Department'
 import Hero from '../../Components/Hero/Hero'
 import Industry from '../../Components/Industry/Industry'
 import Intro from '../../Components/Intro/Intro'
@@ -12,6 +13,7 @@ const Home = () => {
     <div className={styles.home_container}>
       <Hero />
       <Intro />
+      <Department />
       <Industry />
       <Stats />
       <Testimonial />

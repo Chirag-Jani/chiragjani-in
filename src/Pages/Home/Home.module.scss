@@ -6,12 +6,12 @@
   // background-color: $secondary;
 
   ::-moz-selection {
-    background-color: $secondary;
-    color: $primary;
+    background-color: $primary;
+    color: $alternate;
   }
   
   ::selection {
-    background-color: $secondary;
-    color: $primary;
+    background-color: $primary;
+    color: $alternate;
   }
 }
