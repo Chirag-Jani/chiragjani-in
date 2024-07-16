@@ -29,7 +29,7 @@ const Social = () => {
         <div className={styles.title}>Lets Work Together</div>
         <div className={styles.options}>
           <span>
-            <a href="tel:+918980149230">+91 8980149260</a>
+            <a href="tel:+918980149230">+91 8980149230</a>
           </span>
           <span>
             <a href="mailto:contact@chiragjani.in">contact@chiragjani.in</a>
