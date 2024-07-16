@@ -74,6 +74,12 @@
           aspect-ratio: 9/16;
         }
       }
+      
+      // #videoFb {
+      //   transform: rotateY(180deg);
+      //   -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+      //   -moz-transform:rotateY(180deg); /* Firefox */
+      // }
     }
 
     .text {
@@ -101,6 +107,20 @@
 
         p {
           margin: 25px 0;
+          margin-bottom: 0;
+        }
+      }
+      
+      .designation {
+        text-align: left;
+        color: $tertiary;
+        font-size: 25px;
+        line-height: 100%;
+        width: 100%;
+        font-family: Bricolage Grotesque;
+
+        @media screen and (max-width:500px) {
+          font-size: 32px;
         }
       }
 
