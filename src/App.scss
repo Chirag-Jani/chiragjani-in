@@ -8,26 +8,6 @@
   width: 100vw;
   overflow: hidden;
 
-  &::-webkit-scrollbar {
-    width: 12px;
-    height: calc(100% - 200px);
-    margin: 100px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: $primary;
-    border-radius: 10px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: $secondary;
-    border-radius: 10px;
-  }
-
-  &::-webkit-scrollbar-thumb:hover {
-    background: #2828ff;
-  }
-
   @media screen and (max-width:500px) {
     width: 100vw;
     overflow-x: hidden;
@@ -48,7 +28,7 @@
   }
 
   &::-webkit-scrollbar {
-    width: 12px;
+    width: 6px;
     height: calc(100% - 200px);
     margin: 100px;
   }
