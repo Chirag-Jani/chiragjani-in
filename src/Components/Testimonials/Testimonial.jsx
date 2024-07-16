@@ -45,7 +45,7 @@ const Testimonial = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSelected((prev) => (prev + 1) % data.length);
-    }, 8000);
+    }, 15000);
 
     return () => clearInterval(interval);
   }, []);
@@ -61,13 +61,7 @@ const Testimonial = () => {
           {data[selected].isPhoto ? (
             <img src={data[selected].path} alt={data[selected].name} />
           ) : (
-            <video
-              id={styles.videoFb}
-              className={styles.content}
-              loop
-              autoPlay
-              controls
-            >
+            <video id={styles.videoFb} className={styles.content} loop controls>
               <source src={data[selected].videoSrc} type="video/mp4" />
             </video>
           )}
