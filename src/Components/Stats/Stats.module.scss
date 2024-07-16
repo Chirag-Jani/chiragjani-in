@@ -112,8 +112,7 @@
 
     @media screen and (max-width:500px) {
       width: 100%;
-      padding: 0 25px;
-
+      padding: 0;
     }
   }
 
@@ -127,7 +126,9 @@
 
     @media screen and (max-width:500px) {
       width: 100%;
-      padding: 0 25px;
+      padding: 0;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
 
     p {
@@ -146,6 +147,7 @@
       @media screen and (max-width:500px) {
         text-align: left;
         font-size: 18px;
+        width: 85%;
       }
 
       span {

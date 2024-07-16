@@ -3,6 +3,7 @@
 .home_container {
   @include occupyFullSpace;
   @include flex(column, flex-start, center);
+  box-sizing: border-box;
 
   @media screen and (max-width:500px) {
     width: 100vw;

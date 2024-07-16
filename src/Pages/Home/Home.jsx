@@ -1,3 +1,4 @@
+import Calendy from '../../Components/Calendy/Calendy'
 import Contact from '../../Components/Contact/Contact'
 import Department from '../../Components/Departments/Department'
 import Hero from '../../Components/Hero/Hero'
@@ -17,7 +18,8 @@ const Home = () => {
       <Industry />
       <Stats />
       <Testimonial />
-      <Contact />
+      {/* <Contact /> */}
+      <Calendy />
       <Social />
     </div>
   )
