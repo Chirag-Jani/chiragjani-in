@@ -65,7 +65,7 @@ const Testimonial = () => {
               id={styles.videoFb}
               className={styles.content}
               loop
-              // autoPlay
+              autoPlay
               controls
             >
               <source src={data[selected].videoSrc} type="video/mp4" />
